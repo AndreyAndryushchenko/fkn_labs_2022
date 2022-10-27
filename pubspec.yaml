@@ -68,7 +68,7 @@ flutter:
     - assets/doctor_strange.jpg
     - assets/iron_man.jpg
     - assets/spider_man.jpg
-    - assets/tanos.jpg
+    - assets/thanos.jpg
     - assets/thor.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

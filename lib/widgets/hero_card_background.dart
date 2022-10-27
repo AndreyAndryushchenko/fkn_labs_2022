@@ -5,23 +5,21 @@ class HeroCardBackground extends CustomPainter {
 
   HeroCardBackground({required this.backgroundColor});
 
-  Path initializeShape(double x, double y) {
-    return Path()
-      ..moveTo(x, y/2)
-      ..lineTo(0, y)
-      ..lineTo(x, y);
-  }
-
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()
       ..color = backgroundColor
       ..style = PaintingStyle.fill;
-    canvas.drawPath(initializeShape(size.width, size.height), paint);
+    canvas.drawPath(
+        Path()
+          ..moveTo(size.width, size.height / 2)
+          ..lineTo(0, size.height)
+          ..lineTo(size.width, size.height),
+        paint);
   }
 
   @override
   bool shouldRepaint(covariant HeroCardBackground oldDelegate) {
-    return  backgroundColor != oldDelegate.backgroundColor;
+    return backgroundColor != oldDelegate.backgroundColor;
   }
 }
