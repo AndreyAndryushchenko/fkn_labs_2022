@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Marvel Heroes',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 41, 37, 37),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 41, 39, 43),
       ),
       home: const HomePage(),
     );

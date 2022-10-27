@@ -9,8 +9,28 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: Image.asset('assets/marvel_logo.png', width: 400, height: 50),
           centerTitle: true,
-          backgroundColor: const Color.fromARGB(255, 41, 37, 37),
-          elevation: 0
+          backgroundColor: Colors.transparent,
+          elevation: 0),
+      body: SafeArea(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              children: const [
+                SizedBox(height: 20.0),
+                Text(
+                  'Choose your hero',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Roboto',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28.0,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

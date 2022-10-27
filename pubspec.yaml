@@ -62,14 +62,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/marvel_logo.png
-     - assets/captain_america.jpg
-     - assets/deadpool.jpg
-     - assets/doctor_strange.jpg
-     - assets/iron_man.jpg
-     - assets/spider_man.jpg
-     - assets/tanos.jpg
-     - assets/thor.jpg
+    - assets/marvel_logo.png
+    - assets/captain_america.jpg
+    - assets/deadpool.jpg
+    - assets/doctor_strange.jpg
+    - assets/iron_man.jpg
+    - assets/spider_man.jpg
+    - assets/tanos.jpg
+    - assets/thor.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -83,9 +83,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Roboto
-       fonts:
-         - asset: fonts/Roboto-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
