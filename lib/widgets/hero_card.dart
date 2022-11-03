@@ -1,10 +1,10 @@
+import 'package:fkn_labs_2022/data/hero_data.dart';
 import 'package:flutter/material.dart';
 
 class HeroCard extends StatelessWidget {
-  final String heroName;
-  final String pathToImage;
+  final HeroData heroData;
 
-  const HeroCard({Key? key, required this.heroName, required this.pathToImage})
+  const HeroCard({Key? key, required this.heroData})
       : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class HeroCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
           image: DecorationImage(
-            image: AssetImage(pathToImage),
+            image: AssetImage(heroData.pathToImage),
             fit: BoxFit.cover,
           ),
         ),
@@ -26,7 +26,7 @@ class HeroCard extends StatelessWidget {
           alignment: Alignment.bottomLeft,
           padding: const EdgeInsets.fromLTRB(14.0, 0.0, 0.0, 28.0),
           child: Text(
-            heroName,
+            heroData.heroName,
             style: const TextStyle(
               color: Colors.white,
               fontFamily: 'Roboto',

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fkn_labs_2022/widgets/hero_card_background.dart';
 
 import '../data/hero_data.dart';
+import 'hero_card.dart';
 
 class MyPageView extends StatefulWidget {
   const MyPageView({Key? key}) : super(key: key);
@@ -38,9 +39,9 @@ class _MyPageViewState extends State<MyPageView> {
       PageView.builder(
         controller: pageController,
         itemBuilder: (BuildContext context, int index) {
-          return Center(child: heroesCards[index]);
+          return Center(child: HeroCard(heroData: heroesData[index]));
         },
-        itemCount: heroesCards.length,
+        itemCount: heroesData.length,
       ),
     ]);
   }
