@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class PageHero extends StatelessWidget {
-  const PageHero({super.key, required this.index});
+import 'package:fkn_labs_2022/data/hero_data.dart';
+
+class HeroPage extends StatelessWidget {
+  const HeroPage({super.key, required this.index});
 
   final int index;
 
@@ -18,7 +20,7 @@ class PageHero extends StatelessWidget {
             tag: 'hero/$index',
             child: Stack(children: [
               Image.asset(
-                '',
+                heroesData[index].pathToImage,
                 fit: BoxFit.cover,
                 height: double.infinity,
                 width: double.infinity,
@@ -27,21 +29,21 @@ class PageHero extends StatelessWidget {
                   alignment: Alignment.bottomLeft,
                   padding: const EdgeInsets.fromLTRB(25.0, 0.0, 0.0, 35.0),
                   child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: const [
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                         Text(
-                          '',
-                          style: TextStyle(
+                          heroesData[index].heroName,
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.bold,
                               fontSize: 24.0),
                         ),
-                        SizedBox(height: 13),
+                        const SizedBox(height: 13),
                         Text(
-                          '',
-                          style: TextStyle(
+                          heroesData[index].heroDescription,
+                          style: const TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.normal,
                               color: Color.fromARGB(255, 232, 227, 229),

@@ -1,5 +1,6 @@
-import 'package:fkn_labs_2022/data/hero_data.dart';
 import 'package:flutter/material.dart';
+
+import 'package:fkn_labs_2022/data/hero_data.dart';
 
 class HeroCard extends StatelessWidget {
   final HeroData heroData;
