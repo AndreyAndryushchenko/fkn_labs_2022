@@ -19,7 +19,7 @@ class HeroCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
           image: DecorationImage(
-            image: AssetImage(heroData.pathToImage),
+            image: NetworkImage(heroData.pathToImage),
             fit: BoxFit.cover,
           ),
         ),

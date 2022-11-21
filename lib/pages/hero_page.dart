@@ -19,7 +19,7 @@ class HeroPage extends StatelessWidget {
         body: Hero(
             tag: 'hero/$index',
             child: Stack(children: [
-              Image.asset(
+              Image.network(
                 heroesData[index].pathToImage,
                 fit: BoxFit.cover,
                 height: double.infinity,
