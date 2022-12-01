@@ -76,7 +76,6 @@ class _MyPageViewState extends State<MyPageView> {
                 context,
                 MaterialPageRoute(
                     builder: (context) => HeroPage(
-                          index: index,
                           heroData: listHeroes[index],
                         ))),
             child: Hero(

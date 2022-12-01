@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:fkn_labs_2022/data/hero_data.dart';
 
 class HeroPage extends StatelessWidget {
-  final int index;
   final HeroData heroData;
 
-  const HeroPage({super.key, required this.heroData, required this.index});
+  const HeroPage({super.key, required this.heroData});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class HeroPage extends StatelessWidget {
           elevation: 0.0,
         ),
         body: Hero(
-            tag: 'hero/$index',
+            tag: 'hero/${heroData.id}',
             child: Stack(children: [
               Image.network(
                 heroData.pathToImage,
